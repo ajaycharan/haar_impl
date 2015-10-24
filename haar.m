@@ -1,16 +1,20 @@
-function c = haar(u, n)
+function c = haar(u, k, start)
 
 m = length(u);
 
 % assign default if necessary
 if nargin < 2
-    n = log2(m);
+    k = log2(m);
+end
+
+if nargin < 3
+    start = 1;
 end
 
 % initialization
 c = u;
 
-for i=1:n
+for i=start:k
 
     % region of interest
     r = ceil(m / 2^(i-1));

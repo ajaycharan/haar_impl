@@ -1,4 +1,4 @@
-function u = haar_inv(c, k)
+function u = haar_inv(c, k, start)
 
 % length
 m = length(c);
@@ -11,10 +11,14 @@ if nargin < 2
     k = n;
 end
 
+if nargin < 3
+    start = 1;
+end
+
 % initialization
 u = c;
 
-for i=1:k
+for i=start:k
 
     % region of interest
     r = min(m, m / 2^(n-i));
