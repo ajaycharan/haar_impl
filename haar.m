@@ -1,6 +1,6 @@
 %========================================================
-% function c = haar(c, k, start)
-% - inputs: c, k, start
+% function c = haar(u, k, start)
+% - inputs: u, k, start
 %       u : vector to transform
 %       k : number of rounds of averaging
 %           if set, ignore start. i.e. haar_inv(c, k)
@@ -10,8 +10,9 @@
 %           if set, let k=[]. i.e. haar(c, [], start)
 %           this parameterization essentially completes
 %           the transormation from a given start point
-% - outputs: u
-%       u : the original vector which ws transformed
+% - outputs: c
+%       c : the coefficient vector computed from the
+%           haar transform
 %
 % This function encompasses both the assigned haar
 % function and the haar_step function. 

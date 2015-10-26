@@ -1,3 +1,10 @@
+%=======================================================
+% function C = haar2D(A)
+% - inputs: A
+%       A : two-dimensional matrix 
+% - outputs: C
+%       C : two-dimensional haar coefficients
+%=======================================================
 function C = haar2D(A)
 
 B = [];

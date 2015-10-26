@@ -11,7 +11,7 @@
 %           this parameterization essentially completes
 %           the reconstruction from a given start point
 % - outputs: u
-%       u : the original vector which ws transformed
+%       u : the original vector which was transformed
 %
 % This function encompasses both the assigned haar_inv
 % function and the haar__inv_step function. 
@@ -28,6 +28,7 @@ n = log2(m);
 % assign default if necessary
 if nargin == 1
     k = n;
+    start = 1;
 end
 
 if nargin == 2

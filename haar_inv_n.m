@@ -1,3 +1,11 @@
+%========================================================
+% function u = haar_inv_n(c)
+% - input c: 
+%       c: the coefficient vector computed from the
+%          normalized haar transform
+% - output u:
+%       u: vector to transform
+%========================================================
 function u = haar_inv_n(c)
 
 % length
