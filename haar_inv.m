@@ -1,3 +1,22 @@
+%========================================================
+% function u = haar_inv(c, k, start)
+% - inputs: c, k, start
+%       c : vector of haar coefficients
+%       k : number of rounds of averaging
+%           if set, ignore start. i.e. haar_inv(c, k)
+%           this parameterization begins the reconstruction
+%           up to a point.
+%       start : the iteration at which to begin
+%           if set, let k=[]. i.e. haar_inv(c, [], start)
+%           this parameterization essentially completes
+%           the reconstruction from a given start point
+% - outputs: u
+%       u : the original vector which ws transformed
+%
+% This function encompasses both the assigned haar_inv
+% function and the haar__inv_step function. 
+%
+%========================================================
 function u = haar_inv(c, k, start)
 
 % length
@@ -7,12 +26,16 @@ m = length(c);
 n = log2(m);
 
 % assign default if necessary
-if nargin < 2
+if nargin == 1
     k = n;
 end
 
-if nargin < 3
+if nargin == 2
     start = 1;
+end
+
+if nargin == 3
+    k = n;
 end
 
 % initialization

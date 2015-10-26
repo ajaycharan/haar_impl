@@ -1,3 +1,9 @@
+%=============================================================================
+% function plot_plf(u)
+% - input: u
+%       u: piecewise linear function to be plotted
+% - output: plot
+%=============================================================================
 function plot_plf(u)
 
 close all;
