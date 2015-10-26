@@ -16,5 +16,6 @@ C = [];
 for i=1:size(A, 1)
     C = [C, haar_n(B(1:end, i)')'];
 end
+C = round(C);
 
 return;
