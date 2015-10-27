@@ -1,7 +1,8 @@
 %=======================================================
-% function C = haar2D(A)
-% - inputs: A
+% function C = haar2D(A, k)
+% - inputs: A, k
 %       A : two-dimensional matrix 
+%       k : number of rounds of averaging and differencing
 % - outputs: C
 %       C : two-dimensional haar coefficients
 %=======================================================

@@ -2,7 +2,7 @@
 % function u = haar_inv(c, k, start)
 % - inputs: c, k, start
 %       c : vector of haar coefficients
-%       k : number of rounds of averaging
+%       k : number of rounds of averaging and differencing
 %           if set, ignore start. i.e. haar_inv(c, k)
 %           this parameterization begins the reconstruction
 %           up to a point.

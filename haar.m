@@ -2,7 +2,7 @@
 % function c = haar(u, k, start)
 % - inputs: u, k, start
 %       u : vector to transform
-%       k : number of rounds of averaging
+%       k : number of rounds of averaging and differencing
 %           if set, ignore start. i.e. haar_inv(c, k)
 %           this parameterization begins the transformation
 %           up to a point.
